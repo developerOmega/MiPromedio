@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+button{
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    background: #657db6;    
+    transition: all .3s ease;
+    color:#e3eaee;
+}
+
+button:hover{
+    background: #e3eaee;
+    color: #657db6;
+}
+
+h1,h2{
+    color:#e3eaee;
+}
+/*-------------------------------------------------------------------------*/
+/*Encabezado*/
+/*-------------------------------------------------------------------------*/
+header{
+    background:#657db6;
+}
+
+header .logo  {
+    width: 250px;
+    margin: auto;
+}
+
+header .logo img{
+    width: 100%;
+    display: block;
+}
+
+/*-------------------------------------------------------------------------*/
+/*Main*/
+/*-------------------------------------------------------------------------*/
+
+.main{
+    margin: 20px auto;
+}
+
+/*-------------------------------CAJA MAT--------------------------------*/
+
+
+.main .cajaMaterias{
+    background: #e3eaee;
+    border-radius: 5px;
+}
+
+.main .cajaMaterias h2{
+    width: 100%;
+    text-align: center;
+    background: #657db6;
+    padding:10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.main .cajaMaterias form{
+    padding: 20px;
+}
+
+.main .cajaMaterias form input{
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border:none;
+    font-size: 15px;
+}
+
+.main .cajaMaterias form .impreso{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+.main .cajaMaterias form input[type = "submit"]{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background: #e3eaee;
+    transition: all .3s ease;
+}
+
+.main .cajaMaterias form input[type = "submit"]:hover{
+    background: #657db6;
+}
+
+.main .cajaMaterias form .nombre{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.main .cajaMaterias form .datos .calificacion{
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between
+}
+
+.main .cajaMaterias form .datos .calificacion button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.main .cajaMaterias form .datos .calificacion div{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex:1;
+}
+
+/*-------------------------------CAJA PRO--------------------------------*/
+
+.main .cajaPromedios{
+    margin-top: 20px;
+}
+
+.main .cajaPromedios .promedio{
+    background: #e3eaee;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.main .cajaPromedios .promedio .encabesadoResultado{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #657db6;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.main .cajaPromedios .promedio .tablaRasultados{
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .cajaPromedios .promedio .tablaRasultados div{
+    flex:1;
+    text-align: center;
+}
+
+.main .cajaPromedios .promedio .tablaRasultados div h3, .main .cajaPromedios .promedio .tablaRasultados div p{
+    padding: 10px;
+}
+
+.main .cajaPromedios .promedio .tablaRasultados div h3{
+    border-bottom: 1px solid #657db6;
+}
+
+.main .cajaPromedios .promedio .tablaRasultados .total h3{
+    border-bottom: 1px solid #e3eaee;
+}
+
+.main .cajaPromedios .promedio .tablaRasultados .total{
+    background: #657db6;
+    color: #e3eaee;
+}
+
+/*------------------------------------------------------------------------------*/
+/*Footer*/
+/*------------------------------------------------------------------------------*/
+
+footer{
+    border-top: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    padding: 10px;
+    color: #AAAAAA;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .redes a{
+    color: #AAAAAA;
+    font-size: 25px;
+    padding: 5px;
+}
+
+
+/*------------------------------------------------------------------------------*/
+/*Repositivo*/
+/*------------------------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+    .main .cajaMaterias form input{
+        width: 90%;
+    }
+
+    .main .cajaMaterias form .materia .fa-equals{
+        display: none;
+    }
+
+    .main .cajaPromedios .promedio .tablaRasultados{
+        flex-direction: column;
+    }
+
+}
+
+/*------------------------------------------------------------------------------*/
+/*JavaScript*/
+/*------------------------------------------------------------------------------*/
+.main .cajaMaterias form .none {
+     border:1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

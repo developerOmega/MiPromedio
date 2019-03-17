@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Promedio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" width="50">
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="cajaMaterias">
+                <h2>Materias</h2>
+
+                <form action="" method="post" name="materias" class="formMateria">
+
+                    <input type="text" name="nombre" placeholder="Ingresa el nombre" class="nombre">
+
+                    <div class="materia">
+                            <input type="text" name="nombreMateria" placeholder="Nombre de materia">
+                            <i class="fas fa-equals"></i>
+                            <input type="text" name="resultadoMateia" placeholder="Resultado de materia">
+                            <button id="agregar"><i class="fas fa-plus"></i></button>
+                    </div>
+                        
+                    <div class="datos" id="datos">
+                        
+                        
+                    </div>
+                
+                    <input type="submit" value="Aceptar" name="aceptar">
+                </form>    
+        
+            </div>
+            
+            <div class="cajaPromedios" id="cajaPromedios">
+                
+            </div>
+        </div>
+
+        <footer>
+            <p>Daniel Mendoza - theskip98@gmail</p>
+            <div class="redes">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+
+    </div>
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>
